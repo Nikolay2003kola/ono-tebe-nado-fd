@@ -16,8 +16,6 @@
     padding: 92px 50px 96px 50px;
 }
 
-.header__menu {}
-
 .header__links-list {
     display: flex;
     gap: 32px;
@@ -58,8 +56,6 @@
     font-style: normal;
     font-size: 18px;
 }
-
-.address {}
 
 .address p a,
 .header__links-list-item,
@@ -204,9 +200,6 @@
 
 .card-link {
     color: white;
-}
-
-.card-link {
     text-decoration: none;
 }
 
