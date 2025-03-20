@@ -10,7 +10,6 @@
 
 .header {
     display: grid;
-    height: 293px;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     padding: 92px 50px 96px 50px;
@@ -69,14 +68,14 @@
 .cover {
     position: relative;
     padding: 165px 50px 0 50px;
-    height: 757px;
+    min-height: 757px;
     background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .overlay {
-    background-color: rgb(0, 0, 0, 0.65);
+    background-color: rgb(0, 0, 0, 0.6);
     inset: 0;
     position: absolute;
     z-index: 0;
@@ -132,14 +131,8 @@
     line-height: 28px;
     text-transform: uppercase;
     font-weight: 400;
-}
-
-.spacing_90 {
-    word-spacing: 0.9em;
-}
-
-.spacing_80 {
-    word-spacing: 0.8em;
+    max-width: 645px;
+    word-spacing: 0.85em;
 }
 
 .bet-button {
@@ -152,7 +145,7 @@
     text-transform: uppercase;
     font-weight: 500;
     padding: 12px 32px 11px 31px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid currentColor;
     margin-left: auto;
 }
 
@@ -165,7 +158,8 @@
     margin-bottom: 120px;
 }
 
-.heading_h2 {
+.lots__heading,
+.about__title {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-size: 40px;
@@ -189,6 +183,8 @@
 .lots__card-list-item {
     width: 334px;
     height: 596px;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-link,
@@ -215,20 +211,14 @@
 
 .card_type_film {
     background-image: url("../images/card-lot-01.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_book {
     background-image: url("../images/card-lot-02.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_picture {
     background-image: url("../images/card-lot-03.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .card__title {
@@ -271,7 +261,6 @@
     display: grid;
     grid-template-columns: 334px 688px;
     gap: 25px;
-    height: 595px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 180px;
@@ -319,7 +308,6 @@
 
 .footer {
     width: 100%;
-    height: 180px;
     display: grid;
     grid-template-columns: 334px 1fr 1fr;
     padding-left: 50px;
